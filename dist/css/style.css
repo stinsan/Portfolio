@@ -55,7 +55,7 @@ button:hover {
 }
 
 .header-main {
-  width: calc(23.5vw + 23.5vh);
+  width: calc(25vw + 25vh);
   background-color: black;
   padding: calc(0.5vw + 0.5vh) calc(0.5vw + 0.5vh);
   outline-style: solid;
@@ -88,6 +88,10 @@ button:hover {
 .header-icons-ul li a:hover {
   color: #636363;
   cursor: pointer;
+}
+
+.text-type {
+  text-align: left;
 }
 
 .text {
