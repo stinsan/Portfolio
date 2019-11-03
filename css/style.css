@@ -55,7 +55,7 @@ button:hover {
 }
 
 .header-main {
-  display: inline-block;
+  display: flex;
   padding: calc(0.5vw + 0.5vh) calc(0.5vw + 0.5vh);
   font-family: Consolas, monaco, monospace;
   font-size: calc(2.5vw + 2.5vh);
@@ -63,8 +63,9 @@ button:hover {
   letter-spacing: calc(0.25vw + 0.25vh);
   outline-style: solid;
   outline-width: calc(0.375vw + 0.375vh);
-  min-width: calc(23.5vw + 23.5vh);
+  min-width: calc(23.75vw + 23.75vh);
 }
+
 
 .header-icons {
   margin-top: calc(2vw + 2vh);
@@ -135,4 +136,19 @@ html {
   font-weight: bold;
   letter-spacing: calc(0.25vw + 0.25vh);
   margin-top: calc(1vw + 1vh);
+}
+
+.blinking-underscore{
+  color: white;
+  animation: blink 1s infinite;
+}
+.blinking-underscore.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% { color: white; }
+  49% { color: white; }
+  50% { color: black; }
+  99% { color: black; }
+  100% { color: white; }
 }
