@@ -55,20 +55,15 @@ button:hover {
 }
 
 .header-main {
-  display: flex;
-  width: calc(23.5vw + 23.5vh);
-  background-color: black;
+  display: inline-block;
   padding: calc(0.5vw + 0.5vh) calc(0.5vw + 0.5vh);
-  outline-style: solid;
-  outline-width: calc(0.375vw + 0.375vh);
   font-family: Consolas, monaco, monospace;
   font-size: calc(2.5vw + 2.5vh);
   font-weight: bold;
   letter-spacing: calc(0.25vw + 0.25vh);
-}
-
-.typed-text {
-
+  outline-style: solid;
+  outline-width: calc(0.375vw + 0.375vh);
+  min-width: calc(23.5vw + 23.5vh);
 }
 
 .header-icons {
