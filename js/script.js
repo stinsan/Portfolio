@@ -1,5 +1,5 @@
 const justinsantosText = "justinsantos";
-const midNameTypingDelay = 2000;
+const midNameTypingDelay = 2250;
 const onLoadTypingDelay = 1500;
 const typingDelay = 125;
 const juSpan = document.querySelector(".ju");
@@ -38,12 +38,12 @@ function typeHomepage() {
   }
   else { // No longer typing, bring back blinking underscore
     blinkingUnderscoreSpan.classList.remove("typing");
-    setTimeout(stinsanRecolor, 1000);
+    setTimeout(stinsanRecolor, 500);
   }
 }
 
 function stinsanRecolor() {
-  stinsanSpan.style.color = "#70A1D7";
+  stinsanSpan.style.color = "#FF756D";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
