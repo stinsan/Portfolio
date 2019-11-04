@@ -64,11 +64,12 @@ button:hover {
   letter-spacing: calc(0.25vw + 0.25vh);
   outline-style: solid;
   outline-width: calc(0.375vw + 0.375vh);
-  min-width: calc(25vw + 25vh);
+  min-width: calc(26vw + 26vh);
 }
 
 .justinsantos{
   display: flex;
+  text-align: center;
 }
 
 .header-description {
