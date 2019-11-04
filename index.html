@@ -77,9 +77,16 @@
   <div class="contact-area" id="contact">
     <div class=main-body-header>>justin.<span class="justinText">contact</span>()<span class="blinking-underscore">_</span></div>
     <div class=main-body-text>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor sem vel aliquet ultricies. Proin purus neque, vestibulum ut augue vitae, hendrerit varius justo. Nulla sit amet sodales metus. Sed lacinia metus id urna suscipit sagittis.
-      Pellentesque tincidunt vel augue dapibus consequat. Proin quis sapien sit amet ligula dapibus rhoncus. Vivamus ex justo, cursus bibendum sapien sit amet, rhoncus volutpat lectus. Nullam erat nisi, placerat at lobortis id, feugiat sed est. Class
-      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean in nibh ac neque posuere commodo.
+      <div class="contact-form">
+        <form id="contact-form" method="post" action"php/contact.php">
+          <input name="name" type="text" class="form-control" placeholder="Name" required>
+          <br/>
+          <input name="email" type="email" class="form-control" placeholder="Email" required>
+          <br/>
+          <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+          <br/>
+          <input type="submit" class="form-control submit" value="Send">
+        </form>
     </div>
   </div>
 
