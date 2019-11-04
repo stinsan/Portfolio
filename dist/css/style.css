@@ -62,7 +62,7 @@ button:hover {
 }
 
 .header-main {
-  padding: calc(1vw + 1vh);
+  padding: calc(1vw + 1vh) calc(2vw + 2vh) calc(1vw + 1vh) calc(1vw + 1vh);
   font-family: Consolas, monaco, monospace;
   font-size: calc(2.5vw + 2.5vh);
   font-weight: bold;
@@ -71,7 +71,7 @@ button:hover {
 }
 
 .header-text {
-    display: flex;
+  display: flex;
 }
 
 .header-description {
