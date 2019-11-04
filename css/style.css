@@ -54,6 +54,13 @@ button:hover {
   background-color: black;
 }
 
+.header-main-container{
+  outline-style: solid;
+  outline-width: calc(0.375vw + 0.375vh);
+  margin-top: calc(3vw + 3.75vh);
+  width: calc(24.5vw + 24.5vh);
+}
+
 .header-main {
   display: flex;
   padding: calc(1vw + 1vh);
@@ -62,10 +69,6 @@ button:hover {
   font-weight: bold;
   letter-spacing: calc(0.25vw + 0.25vh);
   width: calc(24.5vw + 24.5vh);
-  outline-style: solid;
-  outline-width: calc(0.375vw + 0.375vh);
-  min-width: calc(24.5vw + 24.5vh);
-  margin-top: calc(3vw + 3.75vh);
 }
 
 .header-description {
