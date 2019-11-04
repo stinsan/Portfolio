@@ -62,13 +62,16 @@ button:hover {
 }
 
 .header-main {
-  display: flex;
   padding: calc(1vw + 1vh);
   font-family: Consolas, monaco, monospace;
   font-size: calc(2.5vw + 2.5vh);
   font-weight: bold;
   letter-spacing: calc(0.25vw + 0.25vh);
   width: calc(24.5vw + 24.5vh);
+}
+
+.header-text {
+    display: flex;
 }
 
 .header-description {
