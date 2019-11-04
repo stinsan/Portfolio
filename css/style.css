@@ -64,7 +64,7 @@ button:hover {
   letter-spacing: calc(0.25vw + 0.25vh);
   outline-style: solid;
   outline-width: calc(0.375vw + 0.375vh);
-  min-width: calc(20vw + 30vh);
+  min-width: calc(22vw + 28vh);
 }
 
 .justinsantos{
