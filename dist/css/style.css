@@ -66,7 +66,7 @@ button:hover {
     letter-spacing: calc(0.25vw + 0.25vh);
     outline-style: solid;
     outline-width: calc(0.375vw + 0.375vh);
-    min-width: calc(20vw + 30vh);
+    min-width: calc(20vw + 30vh); /* Justin don't change this unless you want to die*/
 }
 
 /* Medium Devices, Desktops */
@@ -81,7 +81,7 @@ button:hover {
     letter-spacing: calc(0.25vw + 0.25vh);
     outline-style: solid;
     outline-width: calc(0.375vw + 0.375vh);
-    min-width: calc(25vw + 25vh);
+    min-width: calc(25vw + 25vh); /* Justin don't change this unless you want to die*/
   }
 }
 
@@ -156,18 +156,23 @@ button:hover {
 
 .main-body-text {
   width: 100%;
-  text-align: center;
+  height: calc(15vw + 35vh);
+  text-align: left;
   font-size: calc(1vw + 1vh);
-  padding: 0vw 5vw;
+  padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh);
+}
+
+.main-body-text.contact {
+  text-align: center;
+  justify-content: center;
 }
 
 .about-area, .projects-area, .education-area, .resume-area, .contact-area {
+  display:flex;
   position: relative;
-  display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   width: 100%;
   height: 100vh;
 }
@@ -200,34 +205,39 @@ html {
   100% { color: white; }
 }
 
-form {
-
+.contact-text {
+    font-family: Consolas, monaco, monospace;
+    padding-bottom: calc(1vw + 1vh);
 }
 
 .form-control {
-  width: 600px;
+  width: calc(25vw + 25vh);
   background: transparent;
-  border: none;
+  border: calc(0.05vw + 0.05vh) solid gray;
   outline: none;
-  border-bottom: 1px solid gray;
   color: white;
   font-family: Consolas, monaco, monospace;
-  font-size: 18px;
-  margin-bottom: 16px;
+  font-size: calc(0.75vw + 0.75vh);
+  margin-bottom: calc(1vw + 1vh);
+  padding-left: calc(0.5vw + 0.5vh);
+}
+
+.form-control.message {
+  height: calc(5vw + 5vh);
+  padding: calc(0.5vw + 0.5vh);
 }
 
 input {
-  height: 45px;
+  height: calc(2vw + 2vh);
 }
 
 .form-control.submit {
   background: #636363;
   border-color: transparent;
   color: white;
-  font-size: 20px;
+  font-size: calc(1.5vw + 1.5vh);
   letter-spacing: calc(0.25vw + 0.25vh);
-  height: 50px;
-  margin-top: 20px;
+  height: calc(3vw + 3vh);
   transition-duration: 0.4s;
 }
 
