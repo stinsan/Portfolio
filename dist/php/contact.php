@@ -3,7 +3,7 @@
   $visitor_email = $_POST['email'];
   $message = $_POST['message'];
 
-  $my_email = 'stinsan@ou.edu';
+  $my_email = 'stinsan1999@gmail.com';
   $headers = "From: ".$visitor_email;
   $email_body = "You have recieved a message from ".$name.".\n\n".$message;
   $email_subject = "Message From Your Website!";
