@@ -6,9 +6,12 @@ const juSpan = document.querySelector(".ju");
 const stinsanSpan = document.querySelector(".stinsan");
 const tosSpan = document.querySelector(".tos");
 const blinkingUnderscoreSpan = document.querySelector(".blinking-underscore");
-let charIndex = -1;
 
-function typeHomepage() {
+function typeHomepage(index) {
+  let charIndex = index;
+  let totalLength = juSpan.textContent.length + stinsanSpan.textContent.length +
+    tosSpan.textContent.length;
+
   if (charIndex < justinsantosText.length) {
     // Currently typing, remove blinking underscore
     if (!blinkingUnderscoreSpan.classList.contains("typing")) {
@@ -16,36 +19,45 @@ function typeHomepage() {
     }
 
     charIndex++;
-
     // Add next character
     if (charIndex < 2) {
       juSpan.textContent += justinsantosText.charAt(charIndex);
-    }
-    else if (charIndex >= 2 && charIndex < 9) {
+    } else if (charIndex >= 2 && charIndex < 9) {
       stinsanSpan.textContent += justinsantosText.charAt(charIndex);
-    }
-    else {
+    } else {
       tosSpan.textContent += justinsantosText.charAt(charIndex);
     }
 
     if (charIndex === 5) { // Add significant delay between first and last name
-      setTimeout(typeHomepage, midNameTypingDelay);
+      setTimeout(function() {
+        typeHomepage(charIndex)
+      }, midNameTypingDelay);
       blinkingUnderscoreSpan.classList.remove("typing");
+    } else { // Else normal delay
+      setTimeout(function() {
+        typeHomepage(charIndex)
+      }, typingDelay);
     }
-    else { // Else normal delay
-      setTimeout(typeHomepage, typingDelay);
-    }
-  }
-  else { // No longer typing, bring back blinking underscore
+  } else { // No longer typing, bring back blinking underscore
     blinkingUnderscoreSpan.classList.remove("typing");
-    setTimeout(stinsanRecolor, 500);
+    setTimeout(function() {
+      stinsanSpan.style.color = "#FF756D";
+    }, 500);
   }
 }
 
-function stinsanRecolor() {
-  stinsanSpan.style.color = "#FF756D";
+function typeHeading(headingName, className) {
+  element = document.querySelector(".className");
+
+  charIndex2++;
+  if (charIndex < headingName.length) {
+    element.textContent += headingName.charAt(charIndex2);
+    setTimeout(typeHeading, typingDelay);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(typeHomepage, onLoadTypingDelay);
+  setTimeout(function() {
+    typeHomepage(-1)
+  }, onLoadTypingDelay);
 });
