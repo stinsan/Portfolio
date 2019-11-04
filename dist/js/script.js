@@ -41,7 +41,7 @@ function typeHomepage(index) {
   } else { // No longer typing, bring back blinking underscore
     blinkingUnderscoreSpan.classList.remove("typing");
     setTimeout(function() {
-      stinsanSpan.style.color = "#FF756D";
+      stinsanSpan.style.color = "#5284bd";
     }, 500);
   }
 }
