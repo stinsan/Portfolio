@@ -199,3 +199,39 @@ html {
   99% { color: black; }
   100% { color: white; }
 }
+
+form {
+
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: white;
+  font-family: Consolas, monaco, monospace;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+.form-control.submit {
+  background: #636363;
+  border-color: transparent;
+  color: white;
+  font-size: 20px;
+  letter-spacing: calc(0.25vw + 0.25vh);
+  height: 50px;
+  margin-top: 20px;
+  transition-duration: 0.4s;
+}
+
+.form-control.submit:hover {
+   background-color: #FF756D;
+   cursor: pointer;
+}
