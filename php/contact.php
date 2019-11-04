@@ -3,12 +3,12 @@
   $visitor_email = $_POST['email'];
   $message = $_POST['message'];
 
-  $email = 'stinsan@ou.edu';
-  $email_subject = "Message from stinsan.com";
-  $email_body = "Name: $name.\n". "Email: $email_from.\n". "Message: $message.\n";
+  $my_email = 'stinsan@ou.edu';
+  $headers = "From: ".$visitor_email;
+  $email_body = "You have recieved a message from ".$name.".\n\n".$message;
+  $email_subject = "Message From Your Website!";
 
+  mail($my_email, $email_subject, $email_body, $headers);
 
-
-
-
+  header("Location: index.html?mailsend");
 ?>
