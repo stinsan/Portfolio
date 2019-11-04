@@ -100,6 +100,15 @@ button:hover {
   letter-spacing: calc(0.25vw + 0.25vh);
 }
 
+.header-description a {
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: white;
+}
+
+.header-description a:hover {
+    color: #FF756D;
+}
 
 .header-icons {
   margin-top: calc(2vw + 2vh);
@@ -121,7 +130,7 @@ button:hover {
 }
 
 .header-icons-ul li a:hover {
-  color: #636363;
+  color: #FF756D;
   cursor: pointer;
 }
 
