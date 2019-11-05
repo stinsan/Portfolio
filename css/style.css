@@ -70,7 +70,7 @@ button:hover {
   letter-spacing: 3px;
   outline-style: solid;
   outline-width: 4px;
-  min-width: 258px; /* don't change */
+  min-width: 230px; /* Justin don't change this unless you want to die*/
 }
 
 .justinsantos{
@@ -434,7 +434,7 @@ input {
     letter-spacing: 5px;
     outline-style: solid;
     outline-width: 4px;
-    min-width: 382px; /* dont change */
+    min-width: 360px; /* Justin don't change this unless you want to die*/
   }
 
   .header-description {
@@ -649,7 +649,7 @@ input {
       letter-spacing: 5px;
       outline-style: solid;
       outline-width: 4px;
-      min-width: 400px; /* min-width x 0.775 */
+      min-width: 365px; /* Justin don't change this unless you want to die*/
     }
 
     .header-description {
