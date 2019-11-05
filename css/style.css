@@ -70,7 +70,7 @@ button:hover {
   letter-spacing: 3px;
   outline-style: solid;
   outline-width: 4px;
-  min-width: 270px; /* prev: 230 */
+  min-width: 265px; /* prev: 230->270 */
 }
 
 .justinsantos{
