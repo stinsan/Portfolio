@@ -70,7 +70,7 @@ button:hover {
   letter-spacing: 3px;
   outline-style: solid;
   outline-width: 4px;
-  min-width: 76.5%; /* Justin don't change this unless you want to die*/
+  min-width: 230px; /* Justin don't change this unless you want to die*/
 }
 
 .justinsantos{
@@ -201,8 +201,8 @@ button:hover {
 .modal-open-button-container {
   background-color: #6D98AB;
   opacity: 1;
-  height: 81px;
-  width: 144px;
+  height: 63px;
+  width: 112px;
   border: 5px solid #2e2e2e;
   margin: 10px;
 }
@@ -434,7 +434,7 @@ input {
     letter-spacing: 5px;
     outline-style: solid;
     outline-width: 4px;
-    min-width: 76.5%; /* Justin don't change this unless you want to die*/
+    min-width: 360px; /* Justin don't change this unless you want to die*/
   }
 
   .header-description {
@@ -442,7 +442,7 @@ input {
     text-align: center;
     line-height: 30px;
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 5px;
   }
 
