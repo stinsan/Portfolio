@@ -175,7 +175,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .modal {
@@ -613,4 +613,238 @@ input {
     height: 50px;
     transition-duration: 0.4s;
   }
+/*-----------------------------------------------------------------------------*/
+/*--------------------------568 landscape--------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+  @media only screen and (min-width: 568px) and (orientation: landscape) {
+    .navbar {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: #2e2e2e;
+      width: 100%;
+      height: 50px;
+      z-index: 1;
+    }
+
+    .navbar button {
+      height: 100%;
+      padding: 0px 25px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-top: 50px; /*accomodates for navbar*/
+      padding: 5px;
+      font-family: Consolas, monaco, monospace;
+      font-size: 37px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      outline-style: solid;
+      outline-width: 4px;
+      min-width: 365px; /* Justin don't change this unless you want to die*/
+    }
+
+    .header-description {
+      padding: 12px;
+      text-align: center;
+      line-height: 25px;
+      font-family: "Open Sans";
+      font-size: 16px;
+      letter-spacing: 5px;
+    }
+
+    .header-icons-ul li {
+      display: inline-block;
+      list-style: none;
+      padding: 0px 10px;
+    }
+
+    .header-icons-ul li .fab {
+      font-size: 40px;
+      transition: 0.4s
+    }
+
+    .main-body-header {
+      font-family: Consolas, monaco, monospace;
+      width: 100%;
+      font-size: 28px;
+      letter-spacing: 3px;
+      padding: 60px 10px 0px; /*accomodates for navbar and more*/
+    }
+
+    .main-body-text {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      font-family: "Open Sans";
+      font-size: 16px;
+      padding: 5px 20px 0px;
+    }
+
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      border: 2px solid white;
+      border-radius: 10px;
+      z-index: 10;
+      background-color: black;
+      width: 700px;
+      max-width: 80%;
+      transition: 0.4s;
+      height: 275px;
+    }
+
+    .modal-open-button-container {
+      background-color: #6D98AB;
+      opacity: 1;
+      height: 99px;
+      width: 176px;
+      border: 8px solid #2e2e2e;
+    }
+
+    .modal-header {
+      padding: 5px 10px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      border-bottom: 1px solid white;
+      letter-spacing: 3px;
+    }
+
+    .modal-header .modal-title {
+      font-family: Consolas, monaco, monospace;
+      font-size: 15px;
+      font-weight: bold;
+      color: #6D98AB;
+      width: 95%;
+    }
+
+    .modal-header .close-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 2px;
+      transition-duration: 0.4s;
+    }
+
+    .modal-body {
+      font-size: 12px;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .modal-skills .fab{
+      font-size: 18px;
+      transition: 0.4s;
+      padding: 10px 10px 0px 10px;
+      color: white;
+    }
+
+    .modal-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .modal-buttons button{
+      margin-right: 8px;
+      margin-left: 8px;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .education-area{
+      height: 175vh;
+    }
+
+    .main-body-text.education {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100%;
+      align-items: baseline;
+      text-align: left;
+      font-size: 16px;
+      padding: 0px 20px 0px;
+    }
+
+    .university-name-info-container {
+      margin-right: 14px;
+      width: 40%;
+    }
+
+    .university-name {
+      font-family: Consolas, monaco, monospace;
+      font-weight: bold;
+      color: #6D98AB;
+      font-size: 20px;
+      border-bottom: 1px solid gray;
+    }
+
+    .university-info {
+      padding-top: 10px;
+      font-size: 16px;
+    }
+
+    .relevant-courses-container {
+      font-size: 16px;
+      width: 60%;
+    }
+
+    .in-relevant-courses {
+      padding-top: 14px;
+    }
+
+    .contact-text {
+      font-family: "Open Sans";
+      padding-bottom: 10px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    .form-control {
+      width: 100%;
+      background: transparent;
+      border: 1px solid gray;
+      outline: none;
+      color: white;
+      font-family: "Open Sans";
+      font-size: 15px;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+
+    .form-control.message {
+      height: 100px;
+      padding: 8px;
+    }
+
+    input {
+      height: 32px;
+    }
+
+    .form-control.submit {
+      background: #2e2e2e;
+      border-color: transparent;
+      color: white;
+      font-size: 15px;
+      letter-spacing: 5px;
+      height: 50px;
+      transition-duration: 0.4s;
+    }
 }
