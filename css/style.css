@@ -191,6 +191,97 @@ button:hover {
   padding-top: calc(3.5vw + 3.5vh);
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: black;
+  width: 700px;
+  max-width: 80%;
+  transition: 0.4s;
+}
+
+.modal-img {
+  transition-duration: 0.4s;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-open-button-container {
+  background-color: #5284bd;
+  opacity: 1;
+  height: calc(9vw + 9vh);
+  width: calc(14vw + 14vh);
+  border: calc(0.48vw + 0.27vh) solid #2e2e2e;
+}
+
+.modal-open-button-container:hover .modal-img{
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 1px solid white;
+  letter-spacing: calc(0.1vw + 0.1vh);
+}
+
+.modal-header .modal-title {
+  font-family: Consolas, monaco, monospace;
+  font-size: calc(1vw + 1vh);
+  font-weight: bold;
+  color: #5284bd;
+  width: 95%;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: calc(1.5vw + 1.5vh);
+  font-weight: bold;
+  padding: 0;
+  transition-duration: 0.4s;
+}
+
+.modal-header .close-button:hover {
+  color: #5284bd;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5284bd;
+  z-index: 9;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+#overlay.active{
+  opacity: 0.4;
+  pointer-events: all;
+}
+
 .university-name-info-container {
   margin-right: calc(2vh + 2vw);
   width: 25%;
