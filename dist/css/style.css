@@ -83,7 +83,7 @@ button:hover {
   text-align: center;
   line-height: 20px;
   font-family: "Open Sans";
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 3px;
 }
 
@@ -124,7 +124,7 @@ button:hover {
 .main-body-header {
   font-family: Consolas, monaco, monospace;
   width: 100%;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 3px;
   padding: 70px 10px 0px; /*accomodates for navbar and more*/
 }
@@ -140,7 +140,7 @@ button:hover {
   height: 100%;
   text-align: left;
   font-family: "Open Sans";
-  font-size: 9px;
+  font-size: 12px;
   padding: 10px 20px 0px;
 }
 
@@ -151,7 +151,7 @@ button:hover {
   height: 100%;
   align-items: baseline;
   text-align: left;
-  font-size: 12px;
+  font-size: 16px;
   padding: 10px 20px 0px;
 }
 
@@ -310,16 +310,16 @@ button:hover {
 
 .university-info {
   padding-top: 5px;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .relevant-courses-container {
-  font-size: 9px;
+  font-size: 11px;
   width: 60%;
 }
 
 .in-relevant-courses {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 html {
@@ -352,9 +352,10 @@ html {
 
 .contact-text {
   font-family: "Open Sans";
+  text-align: left;
   padding-bottom: 20px;
-  font-size: 9px;
-  line-height: 13px;
+  font-size: 11px;
+  line-height: 14px;
 }
 
 .contact-text a {
@@ -373,7 +374,7 @@ html {
   outline: none;
   color: white;
   font-family: "Open Sans";
-  font-size: 9px;
+  font-size: 11px;
   margin-bottom: 10px;
   padding: 5px;
 }
