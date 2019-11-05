@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-  background-color: #5284bd;
+  background-color: #6D98AB;
   cursor: pointer;
 }
 
@@ -85,7 +85,6 @@ button:hover {
   }
 }
 
-
 .justinsantos{
   display: flex;
   text-align: center;
@@ -107,11 +106,11 @@ button:hover {
 }
 
 .header-description a:hover {
-    color: #5284bd;
+    color: #6D98AB;
 }
 
 .header-icons {
-  margin-top: calc(2vw + 2vh);
+  margin-top: calc(0.75vw + 0.75vh);
 }
 
 .header-icons-ul li {
@@ -130,7 +129,7 @@ button:hover {
 }
 
 .header-icons-ul li a:hover {
-  color: #5284bd;
+  color: #6D98AB;
   cursor: pointer;
 }
 
@@ -151,10 +150,12 @@ button:hover {
 }
 
 .justinText {
-  color: #5284bd;
+  color: #6D98AB;
 }
 
 .main-body-text {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: calc(15vw + 35vh);
   text-align: left;
@@ -176,6 +177,8 @@ button:hover {
 }
 
 .main-body-text.contact {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
 }
@@ -196,7 +199,7 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
   z-index: 10;
   background-color: black;
@@ -212,11 +215,12 @@ button:hover {
 }
 
 .modal-open-button-container {
-  background-color: #5284bd;
+  background-color: #6D98AB;
   opacity: 1;
   height: calc(9vw + 9vh);
-  width: calc(14vw + 14vh);
+  width: calc(16vw + 16vh);
   border: calc(0.48vw + 0.27vh) solid #2e2e2e;
+  margin-right: calc(2vw + 2vh);
 }
 
 .modal-open-button-container:hover .modal-img{
@@ -241,7 +245,7 @@ button:hover {
   font-family: Consolas, monaco, monospace;
   font-size: calc(1vw + 1vh);
   font-weight: bold;
-  color: #5284bd;
+  color: #6D98AB;
   width: 95%;
 }
 
@@ -257,11 +261,35 @@ button:hover {
 }
 
 .modal-header .close-button:hover {
-  color: #5284bd;
+  color: #6D98AB;
 }
 
 .modal-body {
   padding: 10px 15px;
+}
+
+.modal-skills .fab{
+  font-size: calc(1vw + 1vh);
+  transition: 0.4s;
+  padding: 15px 15px 0px 15px;
+  color: white;
+}
+
+.modal-skills .fab:hover {
+  cursor: pointer;
+  color: #6D98AB;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.modal-buttons button{
+  margin-right: calc(1vw + 1vh);
+  margin-left: calc(1vw + 1vh);
 }
 
 #overlay {
@@ -271,14 +299,14 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #5284bd;
+  background-color: #6D98AB;
   z-index: 9;
   pointer-events: none;
   transition: 0.4s;
 }
 
 #overlay.active{
-  opacity: 0.4;
+  opacity: 0.2;
   pointer-events: all;
 }
 
@@ -290,7 +318,7 @@ button:hover {
 .university-name {
   font-family: Consolas, monaco, monospace;
   font-weight: bold;
-  color: #5284bd;
+  color: #6D98AB;
   border-bottom: calc(0.05vw + 0.05vh) solid gray;
 }
 
@@ -349,7 +377,7 @@ html {
 }
 
 .contact-text a:hover {
-  color: #5284bd;
+  color: #6D98AB;
 }
 
 .form-control {
@@ -384,6 +412,6 @@ input {
 }
 
 .form-control.submit:hover {
-   background-color: #5284bd;
+   background-color: #6D98AB;
    cursor: pointer;
 }
