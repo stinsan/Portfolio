@@ -18,21 +18,25 @@ body {
 .navbar {
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #2e2e2e;
   width: 100%;
-  height: calc(3vw + 3.75vh);
+  height: 60px;
   z-index: 1;
+}
+
+.navbar button {
+  height: 100%;
+  padding: 6.5px;
 }
 
 button {
   color: white;
   font-family: Consolas, monaco, monospace;
-  font-size: calc(0.5vw + 0.95vh);
-  padding: calc(1vw + 1.25vh);
+  font-size: 11px;
   text-transform: lowercase;
   border: none;
   background-color: #2e2e2e;
@@ -56,22 +60,24 @@ button:hover {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width:320px) {
-  .header-main {
+  .header {
     display: flex;
-    margin-top: calc(3vw + 3.75vh);
-    padding: calc(1vw + 1vh) calc(1vw + 1vh);
+    align-items: center;
+    justify-content: left;
+    margin-top: 60px; /*accomodates for navbar*/
+    padding: 5px;
     font-family: Consolas, monaco, monospace;
-    font-size: calc(2.5vw + 2.5vh);
+    font-size: 25px;
     font-weight: bold;
-    letter-spacing: calc(0.25vw + 0.25vh);
+    letter-spacing: 3px;
     outline-style: solid;
-    outline-width: calc(0.375vw + 0.375vh);
-    min-width: calc(20vw + 30vh); /* Justin don't change this unless you want to die*/
+    outline-width: 4px;
+    min-width: 80%; /* Justin don't change this unless you want to die*/
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 810px) {
-  .header-main {
+  .header {
     display: flex;
     margin-top: calc(3vw + 3.75vh);
     padding: calc(1vw + 1vh) calc(1vw + 1vh);
@@ -91,12 +97,12 @@ button:hover {
 }
 
 .header-description {
-  padding-top: calc(1vw + 1vh);
+  padding: 15px;
   text-align: center;
-  line-height: calc(2vw + 2vh);
+  line-height: 20px;
   font-family: "Open Sans";
-  font-size: calc(1vw + 1vh);
-  letter-spacing: calc(0.1vw + 0.1vh);
+  font-size: 10px;
+  letter-spacing: 3px;
 }
 
 .header-description a {
@@ -110,17 +116,17 @@ button:hover {
 }
 
 .header-icons {
-  margin-top: calc(0.75vw + 0.75vh);
+  margin-top: 0;
 }
 
 .header-icons-ul li {
   display: inline-block;
   list-style: none;
-  padding: 0 calc(0.5vw + 0.5vh);
+  padding: 0px 5px;
 }
 
 .header-icons-ul li .fab {
-  font-size: calc(2vw + 2vh);
+  font-size: 30px;
   transition: 0.4s
 }
 
@@ -133,20 +139,12 @@ button:hover {
   cursor: pointer;
 }
 
-.text-type {
-  text-align: left;
-}
-
-.text {
-  font-size: calc(1.5vw + 1.5vh);
-}
-
 .main-body-header {
   font-family: Consolas, monaco, monospace;
   width: 100%;
-  font-size: calc(1.5vw + 1.5vh);
-  letter-spacing: calc(0.1vw + 0.1vh);
-  padding: 1vw 1vw;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 50px 10px 0px;
 }
 
 .justinText {
@@ -157,30 +155,28 @@ button:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: calc(15vw + 35vh);
+  height: 100%;
   text-align: left;
   font-family: "Open Sans";
-  font-size: calc(0.75vw + 0.75vh);
-  padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh);
+  font-size: 9px;
+  padding: 10px 20px 0px;
 }
 
 .main-body-text.education {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  height: calc(15vw + 15vh);
+  justify-content: space-between;
+  height: 100%;
   align-items: baseline;
   text-align: left;
-  font-family: "Open Sans";
-  font-size: calc(1vw + 1vh);
-  padding: calc(1vw + 1vh) calc(2.5vw + 2.5vh);
+  font-size: 12px;
+  padding: 10px 20px 0px;
 }
 
 .main-body-text.contact {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
 }
 
 .about-area, .projects-area, .education-area, .resume-area, .contact-area {
@@ -216,11 +212,15 @@ button:hover {
 
 .modal-open-button-container {
   background-color: #6D98AB;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   opacity: 1;
-  height: calc(9vw + 9vh);
-  width: calc(16vw + 16vh);
-  border: calc(0.48vw + 0.27vh) solid #2e2e2e;
-  margin-right: calc(2vw + 2vh);
+  height: 81px;
+  width: 144px;
+  border: 5px solid #2e2e2e;
+  margin: 10px;
 }
 
 .modal-open-button-container:hover .modal-img{
@@ -243,7 +243,7 @@ button:hover {
 
 .modal-header .modal-title {
   font-family: Consolas, monaco, monospace;
-  font-size: calc(1vw + 1vh);
+  font-size: 11px;
   font-weight: bold;
   color: #6D98AB;
   width: 95%;
@@ -254,9 +254,9 @@ button:hover {
   border: none;
   outline: none;
   background: none;
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: 15px;
   font-weight: bold;
-  padding: 0;
+  padding: 5px;
   transition-duration: 0.4s;
 }
 
@@ -265,11 +265,12 @@ button:hover {
 }
 
 .modal-body {
+  font-size: 9px;
   padding: 10px 15px;
 }
 
 .modal-skills .fab{
-  font-size: calc(1vw + 1vh);
+  font-size: 16px;
   transition: 0.4s;
   padding: 15px 15px 0px 15px;
   color: white;
@@ -288,8 +289,9 @@ button:hover {
 }
 
 .modal-buttons button{
-  margin-right: calc(1vw + 1vh);
-  margin-left: calc(1vw + 1vh);
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px;
 }
 
 #overlay {
@@ -311,29 +313,29 @@ button:hover {
 }
 
 .university-name-info-container {
-  margin-right: calc(2vh + 2vw);
-  width: 25%;
+  margin-right: 10px;
+  width: 40%;
 }
 
 .university-name {
   font-family: Consolas, monaco, monospace;
   font-weight: bold;
   color: #6D98AB;
-  border-bottom: calc(0.05vw + 0.05vh) solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .university-info {
-  padding-top: calc(0.5vw + 0.5vh);
-  font-size: calc(0.75vw + 0.75vh);
+  padding-top: 5px;
+  font-size: 9px;
 }
 
 .relevant-courses-container {
-  font-size: calc(0.75vw + 0.75vh);
-  width: 75%;
+  font-size: 9px;
+  width: 60%;
 }
 
 .in-relevant-courses {
-  padding-top: calc(0.5vw + 0.5vh);
+  padding-top: 10px;
 }
 
 html {
@@ -365,10 +367,10 @@ html {
 }
 
 .contact-text {
-    font-family: "Open Sans";
-    padding-bottom: calc(1vw + 1vh);
-    font-size: calc(0.75vw + 0.75vh);
-    line-height: calc(1.5vw + 1.5vh);
+  font-family: "Open Sans";
+  padding-bottom: 20px;
+  font-size: 9px;
+  line-height: 13px;
 }
 
 .contact-text a {
@@ -381,33 +383,33 @@ html {
 }
 
 .form-control {
-  width: calc(25vw + 25vh);
+  width: 100%;
   background: transparent;
-  border: calc(0.05vw + 0.05vh) solid gray;
+  border: 1px solid gray;
   outline: none;
   color: white;
   font-family: "Open Sans";
-  font-size: calc(0.75vw + 0.75vh);
-  margin-bottom: calc(1vw + 1vh);
-  padding-left: calc(0.5vw + 0.5vh);
+  font-size: 9px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 .form-control.message {
-  height: calc(5vw + 5vh);
-  padding: calc(0.5vw + 0.5vh);
+  height: 100px;
+  padding: 5px;
 }
 
 input {
-  height: calc(2vw + 2vh);
+  height: 24px;
 }
 
 .form-control.submit {
   background: #2e2e2e;
   border-color: transparent;
   color: white;
-  font-size: calc(1.5vw + 1.5vh);
-  letter-spacing: calc(0.25vw + 0.25vh);
-  height: calc(3vw + 3vh);
+  font-size: 15px;
+  letter-spacing: 3px;
+  height: 40px;
   transition-duration: 0.4s;
 }
 
