@@ -74,7 +74,7 @@ button:hover {
   letter-spacing: 3px;
   outline-style: solid;
   outline-width: 4px;
-  min-width: 20.25rem; /* prev:17rem */
+  min-width: 20.4rem; /*dont change*/
 }
 
 .justinsantos{
@@ -83,12 +83,10 @@ button:hover {
 }
 
 .header-description {
-  padding: 15px;
+  padding: 1.5rem 1rem;
   text-align: center;
-  line-height: 20px;
   font-family: "Open Sans";
-  font-size: 11px;
-  letter-spacing: 3px;
+  font-size: 1.1rem;
 }
 
 .header-description a {
@@ -101,18 +99,14 @@ button:hover {
     color: #6D98AB;
 }
 
-.header-icons {
-  margin-top: 0;
-}
-
 .header-icons-ul li {
   display: inline-block;
   list-style: none;
-  padding: 0px 5px;
+  padding: 0rem 0.4rem;
 }
 
 .header-icons-ul li .fab {
-  font-size: 30px;
+  font-size: 2rem;
   transition: 0.4s
 }
 
@@ -130,7 +124,7 @@ button:hover {
   width: 100%;
   font-size: 25px;
   letter-spacing: 3px;
-  padding: 70px 10px 0px; /*accomodates for navbar and more*/
+  padding: 6rem 0.5rem 1rem; /*accomodates for navbar and more*/
 }
 
 .justinText {
@@ -143,8 +137,7 @@ button:hover {
   width: 100%;
   text-align: left;
   font-family: "Open Sans";
-  font-size: 14px;
-  padding: 10px 20px 0px;
+  padding: 0rem 2rem ;
 }
 
 .main-body-text.about {
@@ -153,6 +146,7 @@ button:hover {
 
 .main-body-text.about p{
   margin: 10px;
+  font-size: 0.9rem;
   color: white;
 }
 
@@ -163,8 +157,7 @@ button:hover {
   height: 100%;
   align-items: baseline;
   text-align: left;
-  font-size: 16px;
-  padding: 10px 20px 0px;
+  padding: 0 2rem;
 }
 
 .main-body-text.contact {
@@ -185,9 +178,9 @@ button:hover {
 
 .main-body-text.projects {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .modal {
@@ -196,10 +189,10 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 2px;
   z-index: 10;
   background-color: black;
-  width: 700px;
+  width: 726px;
   max-width: 80%;
   transition: 0.4s;
 }
@@ -213,8 +206,8 @@ button:hover {
 .modal-open-button-container {
   background-color: #6D98AB;
   opacity: 1;
-  height: 72px;
-  width: 128px;
+  height: 9rem;
+  width: 16rem;
   border: 5px solid #2e2e2e;
   margin: 10px;
 }
@@ -225,21 +218,20 @@ button:hover {
 }
 
 .modal.active {
-    transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 0.5rem;
   display: flex;
   justify-content: left;
   align-items: center;
   border-bottom: 1px solid white;
-  letter-spacing: calc(0.1vw + 0.1vh);
 }
 
 .modal-header .modal-title {
   font-family: Consolas, monaco, monospace;
-  font-size: 18px;
+  font-size: 1.0rem;
   font-weight: bold;
   color: #6D98AB;
   width: 95%;
@@ -250,10 +242,11 @@ button:hover {
   border: none;
   outline: none;
   background: none;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 5px;
+  margin-left: 0.2rem;
   transition-duration: 0.4s;
+  color:white;
 }
 
 .modal-header .close-button:hover {
@@ -261,14 +254,14 @@ button:hover {
 }
 
 .modal-body {
-  font-size: 14px;
-  padding: 0px 15px;
+  font-size: 0.9rem;
+  padding: 0rem 1rem;
 }
 
 .modal-skills .fab{
-  font-size: 19px;
+  font-size: 1rem;
   transition: 0.4s;
-  padding: 10px 15px 5px 15px;
+  padding: 0.75rem 0rem 0.25rem 1rem;
   color: white;
 }
 
@@ -281,14 +274,13 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 0.5rem;
 }
 
 .modal-buttons button{
-  margin-right: 5px;
-  margin-left: 5px;
-  padding: 10px;
-  font-size: 14px;
+  margin: 0.5rem 1rem;
+  padding: 0.4rem;
+  font-size: 0.9rem;
 }
 
 #overlay {
@@ -310,30 +302,31 @@ button:hover {
 }
 
 .university-name-info-container {
-  margin-right: 10px;
+  margin-right: 1rem;
   width: 45%;
 }
 
 .university-name {
-  font-family: Consolas, monaco, monospace;
+  font-family: "Open Sans";
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #6D98AB;
   border-bottom: 1px solid gray;
 }
 
 .university-info {
-  padding-top: 5px;
-  font-size: 12px;
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
 
 .relevant-courses-container {
-  font-size: 12px;
+  font-size: 0.8rem;
   width: 55%;
 }
 
 .in-relevant-courses {
-  padding-top: 15px;
+  padding-top: 0.9rem;
 }
 
 html {
@@ -367,9 +360,9 @@ html {
 .contact-text {
   font-family: "Open Sans";
   text-align: left;
-  padding-bottom: 20px;
-  font-size: 14px;
-  line-height: 18px;
+  padding-bottom: 0.9rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-text a {
@@ -388,27 +381,26 @@ html {
   outline: none;
   color: white;
   font-family: "Open Sans";
-  font-size: 14px;
-  margin-bottom: 10px;
-  padding: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+  padding: 0.45rem;
 }
 
 .form-control.message {
-  height: 100px;
-  padding: 5px;
+  height: 10rem;
+  padding: 0.1rem 0.45rem;
 }
 
 input {
-  height: 24px;
+  height: 1.5rem;
 }
 
 .form-control.submit {
   background: #2e2e2e;
   border-color: transparent;
   color: white;
-  font-size: 18px;
-  letter-spacing: 3px;
-  height: 40px;
+  font-size: 0.9rem;
+  height: 2rem;
   transition-duration: 0.4s;
 }
 
