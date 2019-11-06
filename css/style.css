@@ -771,7 +771,7 @@ input {
   }
 
   .contact-form {
-    padding: 0rem 3rem;
+    padding: 0rem 4rem;
   }
 
   .form-control {
@@ -802,6 +802,7 @@ input {
     font-size: 0.9rem;
     height: 2rem;
     transition-duration: 0.4s;
+    width: 10rem;
   }
 
   .form-control.submit:hover {
