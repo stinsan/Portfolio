@@ -29,7 +29,6 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
   background-color: #2e2e2e;
   width: 100%;
   height: 10%;
@@ -39,10 +38,10 @@ button {
 .navbar button {
   height: 100%;
   font-family: Consolas, monaco, monospace;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   text-transform: lowercase;
   border: none;
-  padding: 0rem 0.5rem;
+  padding: 0rem 0.4rem;
 }
 
 .navbar a {
@@ -128,7 +127,7 @@ button:hover {
   width: 100%;
   font-size: 25px;
   letter-spacing: 3px;
-  padding: 5rem 0.5rem 0.5rem; /*accomodates for navbar and more*/
+  padding: 5.5rem 0.5rem 0.5rem; /*accomodates for navbar and more*/
 }
 
 .justinText {
@@ -177,7 +176,7 @@ button:hover {
   justify-content:flex-start;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 150vh;
 }
 
 .main-body-text.projects {
