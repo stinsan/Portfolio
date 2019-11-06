@@ -137,11 +137,19 @@ button:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
   text-align: left;
   font-family: "Open Sans";
   font-size: 14px;
   padding: 10px 20px 0px;
+}
+
+.main-body-text.about {
+  display: inline-block;
+}
+
+.main-body-text.about p{
+  margin: 10px;
+  color: white;
 }
 
 .main-body-text.education {
@@ -478,7 +486,12 @@ input {
     text-align: left;
     font-family: "Open Sans";
     font-size: 16px;
-    padding: 20px 40px 0px;
+    padding: 20px 30px 0px;
+  }
+
+  .main-body-text.about p {
+    margin: 0px 0px;
+    color: white;
   }
 
   .modal-open-button-container {
@@ -551,7 +564,7 @@ input {
     align-items: baseline;
     text-align: left;
     font-size: 16px;
-    padding: 10px 20px 0px;
+    padding: 10px 30px 0px;
   }
 
   .university-name-info-container {
@@ -693,7 +706,11 @@ input {
     text-align: left;
     font-family: "Open Sans";
     font-size: 16px;
-    padding: 5px 20px 0px;
+    padding: 5px 30px 0px;
+  }
+
+  .about-area {
+    height: 150vh;
   }
 
   .modal {
@@ -708,7 +725,7 @@ input {
     width: 700px;
     max-width: 80%;
     transition: 0.4s;
-    height: 275px;
+    height: 290px;
   }
 
   .modal-open-button-container {
@@ -785,7 +802,7 @@ input {
     align-items: baseline;
     text-align: left;
     font-size: 16px;
-    padding: 5px 20px 0px;
+    padding: 5px 30px 0px;
   }
 
   .university-name-info-container {
@@ -928,7 +945,7 @@ input {
     text-align: left;
     font-family: "Open Sans";
     font-size: 24px;
-    padding: 20px 30px 0px;
+    padding: 20px 55px 0px;
   }
 
   .modal {
@@ -1009,7 +1026,7 @@ input {
   }
 
   .education-area{
-    height: 100vh;
+    height: 110vh;
   }
 
   .main-body-text.education {
@@ -1020,7 +1037,7 @@ input {
     align-items: baseline;
     text-align: left;
     font-size: 26px;
-    padding: 20px 30px 0px;
+    padding: 5px 55px 0px;
   }
 
   .university-name-info-container {
@@ -1047,7 +1064,7 @@ input {
   }
 
   .in-relevant-courses {
-    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   .contact-text {
@@ -1162,8 +1179,8 @@ input {
     height: 100%;
     text-align: left;
     font-family: "Open Sans";
-    font-size: 24px;
-    padding: 20px 30px 0px;
+    font-size: 20px;
+    padding: 20px 55px 0px;
   }
 
   .modal {
@@ -1178,7 +1195,7 @@ input {
     width: 700px;
     max-width: 80%;
     transition: 0.4s;
-    height: 650px;
+    height: 525px;
   }
 
   .modal-open-button-container {
@@ -1218,7 +1235,7 @@ input {
   }
 
   .modal-body {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0px 30px 0px 30px;
   }
 
@@ -1255,7 +1272,7 @@ input {
     align-items: baseline;
     text-align: left;
     font-size: 26px;
-    padding: 0px 30px 0px;
+    padding: 0px 55px 0px;
   }
 
   .university-name-info-container {
@@ -1288,8 +1305,8 @@ input {
   .contact-text {
     font-family: "Open Sans";
     padding-bottom: 30px;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form-control {
@@ -1299,7 +1316,7 @@ input {
     outline: none;
     color: white;
     font-family: "Open Sans";
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 20px;
     padding: 10px;
   }
@@ -1310,7 +1327,7 @@ input {
   }
 
   input {
-    height: 48px;
+    height: 40px;
   }
 
   .form-control.submit {
@@ -1634,7 +1651,11 @@ input {
     text-align: left;
     font-family: "Open Sans";
     font-size: 32px;
-    padding: 20px 60px 0px;
+    padding: 20px 75px 0px;
+  }
+
+  .about-area {
+    height: 50vw;
   }
 
   .modal {
@@ -1726,7 +1747,7 @@ input {
     align-items: baseline;
     text-align: left;
     font-size: 26px;
-    padding: 0px 60px 0px;
+    padding: 0px 75px 0px;
   }
 
   .university-name-info-container {
