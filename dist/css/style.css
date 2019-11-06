@@ -24,23 +24,27 @@ body {
   flex-wrap: wrap;
   background-color: #2e2e2e;
   width: 100%;
-  height: 60px;
+  height: 10%;
   z-index: 1;
 }
 
 .navbar button {
   height: 100%;
-  padding: 6.5px;
-}
-
-button {
+  border: none;
   color: white;
   font-family: Consolas, monaco, monospace;
-  font-size: 11px;
+  font-size: 0.8rem;
   text-transform: lowercase;
   border: none;
   background-color: #2e2e2e;
   transition-duration: 0.4s;
+  padding: 0rem 0.5rem;
+}
+
+.navbar a {
+  padding: 0;
+  height: 100%;
+  border: none;
 }
 
 button:hover {
@@ -62,15 +66,15 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin-top: 60px; /*accomodates for navbar*/
-  padding: 5px;
+  margin-top: 10%; /*accomodates for navbar*/
+  padding: 0.5rem;
   font-family: Consolas, monaco, monospace;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 3px;
   outline-style: solid;
   outline-width: 4px;
-  min-width: 265px; /* prev: 230->270 */
+  min-width: 15.6rem; /* prev: 230->270 */
 }
 
 .justinsantos{
@@ -1343,7 +1347,7 @@ input {
 /*-----------------------------------------------------------------------------*/
 /*--------------------------------1366-----------------------------------------*/
 /*-----------------------------------------------------------------------------*/
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1366px) and (orientation:lanscape) {
   .navbar {
     position: fixed;
     display: flex;
@@ -1579,7 +1583,7 @@ input {
 /*-----------------------------------------------------------------------------*/
 /*--------------------------------1920-----------------------------------------*/
 /*-----------------------------------------------------------------------------*/
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) and (orientation:landscape) {
   .navbar {
     position: fixed;
     display: flex;
@@ -1589,14 +1593,14 @@ input {
     flex-wrap: wrap;
     background-color: #2e2e2e;
     width: 100%;
-    height: 100px;
+    height: 75px;
     z-index: 1;
   }
 
   .navbar button {
     height: 100%;
     padding: 0px 40px;
-    font-size: 34px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -1621,7 +1625,7 @@ input {
     line-height: 50px;
     font-family: "Open Sans";
     font-size: 34px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
   }
 
   .header-icons-ul li {
@@ -1650,12 +1654,18 @@ input {
     height: 100%;
     text-align: left;
     font-family: "Open Sans";
-    font-size: 32px;
-    padding: 20px 75px 0px;
+    font-size: 24px;
+    padding: 40px 75px 0px;
+  }
+
+  .main-body-text.about{
+    display: flex;
+    padding: 0px 500px 100px;
+    align-items: center;
   }
 
   .about-area {
-    height: 50vw;
+    height: 100vh;
   }
 
   .modal {
@@ -1670,7 +1680,7 @@ input {
     width: 1400px;
     max-width: 80%;
     transition: 0.4s;
-    height: 640px;
+    max-height: 90%;
   }
 
   .modal-open-button-container {
