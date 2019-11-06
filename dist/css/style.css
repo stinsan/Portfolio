@@ -74,7 +74,7 @@ button:hover {
   letter-spacing: 3px;
   outline-style: solid;
   outline-width: 4px;
-  min-width: 15.6rem; /* prev: 230->270 */
+  min-width: 17rem; /* prev:17rem */
 }
 
 .justinsantos{
