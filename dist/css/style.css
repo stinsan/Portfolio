@@ -128,7 +128,7 @@ button:hover {
   width: 100%;
   font-size: 25px;
   letter-spacing: 3px;
-  padding: 4rem 0.5rem 0.5rem; /*accomodates for navbar and more*/
+  padding: 5rem 0.5rem 0.5rem; /*accomodates for navbar and more*/
 }
 
 .justinText {
@@ -541,11 +541,11 @@ input {
   }
 
   .projects-area {
-    min-height: 190vh;
+    min-height: 100vh;
   }
 
   .education-area {
-    min-height: 160vh;
+    min-height: 190vh;
   }
 
   .main-body-text.about p{
@@ -581,9 +581,9 @@ input {
 
   .main-body-text.projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .modal {
@@ -610,8 +610,8 @@ input {
   .modal-open-button-container {
     background-color: #6D98AB;
     opacity: 1;
-    height: 9rem;
-    width: 16rem;
+    height: 6.75rem;
+    width: 12rem;
     border: 5px solid #2e2e2e;
     margin: 10px;
   }
@@ -770,6 +770,10 @@ input {
     color: #6D98AB;
   }
 
+  .contact-form {
+    padding: 0rem 3rem;
+  }
+
   .form-control {
     width: 100%;
     background: transparent;
@@ -783,7 +787,7 @@ input {
   }
 
   .form-control.message {
-    height: 10rem;
+    height: 8rem;
     padding: 0.1rem 0.45rem;
   }
 
