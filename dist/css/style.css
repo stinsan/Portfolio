@@ -16,6 +16,13 @@ body {
   color: white;
 }
 
+button {
+  background-color: #2e2e2e;
+  color: white;
+  transition-duration: 0.4s;
+  border: none;
+}
+
 .navbar {
   position: fixed;
   display: flex;
@@ -31,14 +38,10 @@ body {
 
 .navbar button {
   height: 100%;
-  border: none;
-  color: white;
   font-family: Consolas, monaco, monospace;
   font-size: 0.75rem;
   text-transform: lowercase;
   border: none;
-  background-color: #2e2e2e;
-  transition-duration: 0.4s;
   padding: 0rem 0.5rem;
 }
 
@@ -125,7 +128,7 @@ button:hover {
   width: 100%;
   font-size: 25px;
   letter-spacing: 3px;
-  padding: 6rem 0.5rem 1rem; /*accomodates for navbar and more*/
+  padding: 4rem 0.5rem 0.5rem; /*accomodates for navbar and more*/
 }
 
 .justinText {
@@ -146,8 +149,8 @@ button:hover {
 }
 
 .main-body-text.about p{
-  margin: 10px;
-  font-size: 0.85rem;
+  margin: 0.25rem;
+  font-size: 0.825rem;
   color: white;
 }
 
@@ -327,20 +330,12 @@ button:hover {
 }
 
 .in-relevant-courses {
-  padding-top: 0.9rem;
+  padding-bottom: 0.45rem;
 }
 
 html {
   scroll-behavior: smooth;
   transition-duration: 0.4s;
-}
-
-.wip {
-  font-family: Consolas, monaco, monospace;
-  font-size: calc(2.5vw + 2.5vh);
-  font-weight: bold;
-  letter-spacing: calc(0.25vw + 0.25vh);
-  margin-top: calc(1vw + 1vh);
 }
 
 .blinking-underscore{
@@ -409,10 +404,9 @@ input {
    background-color: #6D98AB;
    cursor: pointer;
 }
-/*-----------------------------------------------------------------------------*/
-/*--------------------------------480------------------------------------------*/
-/*-----------------------------------------------------------------------------*/
-@media only screen and (min-width: 480px) {
+
+/*--------------------------- Landscape Phone 480px ---------------------------*/
+@media only screen and (min-width: 480px) and (orientation:landscape) {
   .navbar {
     position: fixed;
     display: flex;
@@ -422,95 +416,226 @@ input {
     flex-wrap: wrap;
     background-color: #2e2e2e;
     width: 100%;
-    height: 80px;
+    height: 10%;
     z-index: 1;
   }
 
   .navbar button {
     height: 100%;
-    padding: 13px;
-    font-size: 15px;
+    border: none;
+    color: white;
+    font-family: Consolas, monaco, monospace;
+    font-size: 0.75rem;
+    text-transform: lowercase;
+    border: none;
+    background-color: #2e2e2e;
+    transition-duration: 0.4s;
+    padding: 0rem 0.5rem;
+  }
+
+  .navbar a {
+    padding: 0;
+    height: 100%;
+    border: none;
+  }
+
+  button:hover {
+    background-color: #6D98AB;
+    cursor: pointer;
+  }
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
   }
 
   .header {
     display: flex;
     align-items: center;
     justify-content: left;
-    margin-top: 80px; /*accomodates for navbar*/
-    padding: 5px;
+    margin-top: 10%; /*accomodates for navbar*/
+    padding: 0.5rem;
     font-family: Consolas, monaco, monospace;
-    font-size: 37px;
+    font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     outline-style: solid;
     outline-width: 4px;
-    min-width: 360px; /* Justin don't change this unless you want to die*/
+    min-width: 20.4rem; /*dont change*/
+  }
+
+  .justinsantos{
+    display: flex;
+    text-align: center;
   }
 
   .header-description {
-    padding: 25px;
+    padding: 1.5rem 1rem;
     text-align: center;
-    line-height: 30px;
     font-family: "Open Sans";
-    font-size: 16px;
-    letter-spacing: 5px;
+    font-size: 1.1rem;
+  }
+
+  .header-description a {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: white;
+  }
+
+  .header-description a:hover {
+      color: #6D98AB;
   }
 
   .header-icons-ul li {
     display: inline-block;
     list-style: none;
-    padding: 0px 10px;
+    padding: 0rem 0.4rem;
   }
 
   .header-icons-ul li .fab {
-    font-size: 40px;
+    font-size: 2rem;
     transition: 0.4s
+  }
+
+  .header-icons-ul li a {
+    color: white;
+  }
+
+  .header-icons-ul li a:hover {
+    color: #6D98AB;
+    cursor: pointer;
   }
 
   .main-body-header {
     font-family: Consolas, monaco, monospace;
     width: 100%;
-    font-size: 28px;
+    font-size: 25px;
     letter-spacing: 3px;
-    padding: 100px 10px 0px; /*accomodates for navbar and more*/
+    padding: 2.5rem 0.5rem 1rem; /*accomodates for navbar and more*/
+  }
+
+  .justinText {
+    color: #6D98AB;
   }
 
   .main-body-text {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
     text-align: left;
     font-family: "Open Sans";
-    font-size: 16px;
-    padding: 20px 30px 0px;
+    padding: 0rem 2rem ;
   }
 
-  .main-body-text.about p {
-    margin: 0px 0px;
+  .main-body-text.about {
+    display: inline-block;
+  }
+
+  .about-area {
+    min-height: 160vh;
+  }
+
+  .projects-area {
+    min-height: 190vh;
+  }
+
+  .education-area {
+    min-height: 160vh;
+  }
+
+  .main-body-text.about p{
+    margin: 10px;
+    font-size: 0.85rem;
     color: white;
+  }
+
+  .main-body-text.education {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: baseline;
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .main-body-text.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-area, .projects-area, .education-area, .resume-area, .contact-area {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-body-text.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 2px solid white;
+    border-radius: 2px;
+    z-index: 10;
+    background-color: black;
+    width: 726px;
+    max-width: 90%;
+    transition: 0.4s;
+    max-height: 90%;
+  }
+
+  .modal-img {
+    transition-duration: 0.4s;
+    height: 100%;
+    width: 100%;
   }
 
   .modal-open-button-container {
     background-color: #6D98AB;
     opacity: 1;
-    height: 99px;
-    width: 176px;
-    border: 8px solid #2e2e2e;
+    height: 9rem;
+    width: 16rem;
+    border: 5px solid #2e2e2e;
+    margin: 10px;
+  }
+
+  .modal-open-button-container:hover .modal-img{
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
   }
 
   .modal-header {
-    padding: 10px 15px;
+    padding: 0.5rem;
     display: flex;
     justify-content: left;
     align-items: center;
     border-bottom: 1px solid white;
-    letter-spacing: 3px;
   }
 
   .modal-header .modal-title {
     font-family: Consolas, monaco, monospace;
-    font-size: 20px;
+    font-size: 1.0rem;
     font-weight: bold;
     color: #6D98AB;
     width: 95%;
@@ -521,81 +646,128 @@ input {
     border: none;
     outline: none;
     background: none;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 5px;
+    margin-left: 0.2rem;
     transition-duration: 0.4s;
+    color:white;
+  }
+
+  .modal-header .close-button:hover {
+    color: #6D98AB;
   }
 
   .modal-body {
-    font-size: 16px;
-    padding: 14px 20px;
+    font-size: 0.7rem;
+    padding: 0rem 1rem;
   }
 
   .modal-skills .fab{
-    font-size: 24px;
+    font-size: 1rem;
     transition: 0.4s;
-    padding: 20px 20px 0px 20px;
+    padding: 0.5rem 0rem 0.25rem 1rem;
     color: white;
+  }
+
+  .modal-skills .fab:hover {
+    cursor: pointer;
+    color: #6D98AB;
   }
 
   .modal-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0.5rem;
   }
 
   .modal-buttons button{
-    margin-right: 8px;
-    margin-left: 8px;
-    padding: 10px;
-    font-size: 16px;
+    margin: 0.5rem 1rem;
+    padding: 0.4rem;
+    font-size: 0.7rem;
   }
 
-  .main-body-text.education {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-    align-items: baseline;
-    text-align: left;
-    font-size: 16px;
-    padding: 10px 30px 0px;
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6D98AB;
+    z-index: 9;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+
+  #overlay.active{
+    opacity: 0.2;
+    pointer-events: all;
   }
 
   .university-name-info-container {
-    margin-right: 14px;
-    width: 40%;
+    margin-right: 1rem;
+    width: 45%;
   }
 
   .university-name {
-    font-family: Consolas, monaco, monospace;
+    font-family: "Open Sans";
     font-weight: bold;
+    font-size: 1.1rem;
     color: #6D98AB;
-    font-size: 20px;
     border-bottom: 1px solid gray;
   }
 
   .university-info {
-    padding-top: 10px;
-    font-size: 16px;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
   }
 
   .relevant-courses-container {
-    font-size: 16px;
-    width: 60%;
+    font-size: 0.8rem;
+    width: 55%;
   }
 
   .in-relevant-courses {
-    padding-top: 14px;
+    padding-top: 0.9rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    transition-duration: 0.4s;
+  }
+
+  .blinking-underscore{
+    color: white;
+    animation: blink 1s infinite;
+  }
+  .blinking-underscore.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0% { color: white; }
+    49% { color: white; }
+    50% { color: black; }
+    99% { color: black; }
+    100% { color: white; }
   }
 
   .contact-text {
     font-family: "Open Sans";
-    padding-bottom: 20px;
-    font-size: 16px;
-    line-height: 22px;
+    text-align: left;
+    padding-bottom: 0.9rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-text a {
+    transition-duration: 0.4s;
+    color: white;
+  }
+
+  .contact-text a:hover {
+    color: #6D98AB;
   }
 
   .form-control {
@@ -605,29 +777,34 @@ input {
     outline: none;
     color: white;
     font-family: "Open Sans";
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
+    padding: 0.45rem;
   }
 
   .form-control.message {
-    height: 200px;
-    padding: 8px;
+    height: 10rem;
+    padding: 0.1rem 0.45rem;
   }
 
   input {
-    height: 32px;
+    height: 1.5rem;
   }
 
   .form-control.submit {
     background: #2e2e2e;
     border-color: transparent;
     color: white;
-    font-size: 16px;
-    letter-spacing: 5px;
-    height: 50px;
+    font-size: 0.9rem;
+    height: 2rem;
     transition-duration: 0.4s;
   }
+
+  .form-control.submit:hover {
+     background-color: #6D98AB;
+     cursor: pointer;
+  }
+}
 /*-----------------------------------------------------------------------------*/
 /*--------------------------568 landscape--------------------------------------*/
 /*-----------------------------------------------------------------------------*/
