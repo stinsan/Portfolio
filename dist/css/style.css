@@ -1,3 +1,4 @@
+/*---------------------- Default Landscape Phone 320px -----------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +34,7 @@ body {
   border: none;
   color: white;
   font-family: Consolas, monaco, monospace;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: lowercase;
   border: none;
   background-color: #2e2e2e;
@@ -146,7 +147,7 @@ button:hover {
 
 .main-body-text.about p{
   margin: 10px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: white;
 }
 
