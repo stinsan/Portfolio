@@ -35,7 +35,7 @@ button {
   z-index: 1;
 }
 
-.navbar button {
+button {
   height: 100%;
   font-family: Consolas, monaco, monospace;
   font-size: 0.6rem;
