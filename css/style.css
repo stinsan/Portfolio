@@ -548,6 +548,8 @@ input {
   }
 
   .main-body-text.about p{
+    background-color: #2e2e2e;
+    padding:10px;
     margin: 10px;
     font-size: 0.85rem;
     color: white;
@@ -1355,6 +1357,7 @@ input {
     text-align: left;
     font-family: "Open Sans";
     padding: 20px 60px 0px;
+
   }
 
   .main-body-text.about {
@@ -1363,6 +1366,7 @@ input {
 
   .main-body-text.about p {
     font-size: 1.2rem;
+    background-color: gray;
   }
 
   .modal {
