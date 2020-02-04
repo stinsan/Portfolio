@@ -548,7 +548,6 @@ input {
   }
 
   .main-body-text.about p{
-    background-color: #2e2e2e;
     padding:10px;
     margin: 10px;
     font-size: 0.85rem;
@@ -1366,7 +1365,6 @@ input {
 
   .main-body-text.about p {
     font-size: 1.2rem;
-    background-color: gray;
   }
 
   .modal {
